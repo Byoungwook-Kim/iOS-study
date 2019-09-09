@@ -18,9 +18,9 @@ class BookManager{
     func showAllBook() -> String {
         var strTemp = ""
         for bookTemp in bookList {
-            strTemp += "Name : \(bookTemp.name)\n"
-            strTemp += "Genre : \(bookTemp.genre)\n"
-            strTemp += "author : \(bookTemp.author)\n"
+            strTemp += "Name : \(bookTemp.name!)\n"
+            strTemp += "Genre : \(bookTemp.genre!)\n"
+            strTemp += "author : \(bookTemp.author!)\n"
             strTemp += "____________________\n"
         }
         return strTemp
@@ -36,9 +36,9 @@ class BookManager{
     var strTemp = ""
     for bookTemp in bookList {
         if bookTemp.name == name {
-            strTemp += "Name : \(bookTemp.name)\n"
-            strTemp += "Genre : \(bookTemp.genre)\n"
-            strTemp += "author : \(bookTemp.author)\n"
+            strTemp += "Name : \(bookTemp.name!)\n"
+            strTemp += "Genre : \(bookTemp.genre!)\n"
+            strTemp += "author : \(bookTemp.author!)\n"
             strTemp += "____________________\n"
             return strTemp
         }
