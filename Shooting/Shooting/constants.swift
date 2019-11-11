@@ -13,5 +13,10 @@ struct Particle {
 }
 
 struct Layer {
-    static let starfield: CGFloat = 0 
+    static let starfield: CGFloat = 0
+    static let meteor: CGFloat = 1
+}
+
+struct Atlas {
+    static let gameobjects = SKTextureAtlas(named: "Gameobjects")
 }
