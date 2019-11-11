@@ -30,6 +30,28 @@ class ViewController: UIViewController {
         
         self.navigationItem.titleView = tf
         
+//        let v = UIView()
+//        v.frame = CGRect(x: 0, y: 0, width: 150, height: 37)
+//        v.backgroundColor = UIColor.brown
+        
+//     let leftItem = UIBarButtonItem(customView: v)
+//        self.navigationItem.leftBarButtonItem = leftItem
+        
+        let rv = UIView()
+        rv.frame = CGRect(x: 0, y: 0, width: 100, height: 37)
+        rv.backgroundColor = UIColor.red
+        
+        let rightItem = UIBarButtonItem(customView: rv)
+        self.navigationItem.rightBarButtonItem = rightItem
+        
+        let back = UIImage(named: "arrow-back")
+        let leftItem = UIBarButtonItem(image: back, style: .plain, target: self, action: nil)
+        self.navigationItem.leftBarButtonItem = leftItem
+        
+        
+        
+        
+        
     }
     
     func initTitleNew() {
