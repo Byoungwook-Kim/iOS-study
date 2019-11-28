@@ -13,5 +13,14 @@ class FrontViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let revealVC = self.revealViewController() {
+            self.sideBarButton.target = revealVC
+            self.sideBarButton.action = #selector(revealVC.revealToggle(_:))
+            
+            //제스쳐 추가
+            
+            self.view.addGestureRecognizer(revealVC.panGestureRecognizer())
+        }
     }
 }
