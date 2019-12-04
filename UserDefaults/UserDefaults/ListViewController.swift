@@ -22,6 +22,26 @@ class ListViewController : UITableViewController {
     @IBOutlet var gender: UISegmentedControl!
     @IBOutlet var married: UISwitch!
     
+    @IBAction func edit(_ sender: Any) {
+         let alert = UIAlertController(title: nil, message: "이름을 입력하세요", preferredStyle: .alert)
+        alert.addTextField(){
+                       $0.text = self.name.text
+                   }
+        alert.addAction(UIAlertAction(title: "OK", style: .default){
+                       (_) in
+                       
+                       let value = alert.textFields?[0].text
+                       let plist = UserDefaults.standard
+                       plist.set(value, forKey: "name")
+                       plist.synchronize()
+                       
+                       self.name.text = value
+                       
+                       
+                   })
+                   self.present(alert, animated: false, completion: nil)
+               }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             let alert = UIAlertController(title: nil, message: "이름을 입력하세요", preferredStyle: .alert)
