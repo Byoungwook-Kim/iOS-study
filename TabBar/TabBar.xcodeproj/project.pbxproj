@@ -30,6 +30,7 @@
 		7C32DC6C2545B02B009DE158 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C32DC5F2545B02A009DE158 /* calendar.png */; };
 		7C32DC6D2545B02B009DE158 /* rss@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C32DC602545B02A009DE158 /* rss@2x.png */; };
 		7C32DC6E2545B02B009DE158 /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C32DC612545B02A009DE158 /* facebook@2x.png */; };
+		7C32DC73254D8D75009DE158 /* NewAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C32DC72254D8D75009DE158 /* NewAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		7C32DC5F2545B02A009DE158 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = "../../../Downloads/swift_practice/Chapter03-TabBar/Resources/calendar.png"; sourceTree = "<group>"; };
 		7C32DC602545B02A009DE158 /* rss@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rss@2x.png"; path = "../../../Downloads/swift_practice/Chapter03-TabBar/Resources/rss@2x.png"; sourceTree = "<group>"; };
 		7C32DC612545B02A009DE158 /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook@2x.png"; path = "../../../Downloads/swift_practice/Chapter03-TabBar/Resources/facebook@2x.png"; sourceTree = "<group>"; };
+		7C32DC72254D8D75009DE158 /* NewAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				7C32DC172545A09C009DE158 /* AppDelegate.swift */,
+				7C32DC72254D8D75009DE158 /* NewAppDelegate.swift */,
 				7C32DC192545A09C009DE158 /* SceneDelegate.swift */,
 				7C32DC1B2545A09C009DE158 /* ViewController.swift */,
 				7C32DC1D2545A09C009DE158 /* Main.storyboard */,
@@ -327,6 +330,7 @@
 				7C32DC4B2545A27A009DE158 /* SecondViewController.swift in Sources */,
 				7C32DC1C2545A09C009DE158 /* ViewController.swift in Sources */,
 				7C32DC502545A28E009DE158 /* ThirdViewController.swift in Sources */,
+				7C32DC73254D8D75009DE158 /* NewAppDelegate.swift in Sources */,
 				7C32DC182545A09C009DE158 /* AppDelegate.swift in Sources */,
 				7C32DC1A2545A09C009DE158 /* SceneDelegate.swift in Sources */,
 			);
